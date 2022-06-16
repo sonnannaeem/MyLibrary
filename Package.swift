@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "MyLibrary",
+    platforms: [
+            .macOS(.v10_14), .iOS(.v13), .tvOS(.v13)
+        ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -21,6 +24,8 @@ let package = Package(
         .target(
             name: "MyLibrary",
             dependencies: []),
-        .binaryTarget(name: "TestCoreFramework", path: "./Sources/TestCoreFramework.xcframework")
+        .binaryTarget(
+            name: "TestCoreFramework",
+            path: "./Sources/TestCoreFramework.xcframework")
     ]
 )
