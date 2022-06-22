@@ -7,6 +7,7 @@
 
 import Foundation
 import GoogleSignIn
+import ExtendedLibrary
 
 public struct SDK {
     
@@ -19,5 +20,9 @@ public struct SDK {
         let currentTime = GoogleSignIn.Date.now.ISO8601Format()
         print("TestCoreFramework>SDK>sayHello() - GoogleSignIn: " + currentTime)
         return currentTime
+    }
+    
+    public static func ExtendedLibraryTest(text: String) {
+        ExtendedLibrary.extensionTest(text: text)
     }
 }

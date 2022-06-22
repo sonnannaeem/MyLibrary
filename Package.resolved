@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "extendedlibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sonnannaeem/ExtendedLibrary.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "db20209514afa2f1c8d56f21b21de7ec090ddbe5"
+      }
+    },
+    {
       "identity" : "googlesignin-ios",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleSignIn-iOS",

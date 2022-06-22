@@ -18,6 +18,7 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
         .package(url: "https://github.com/google/GoogleSignIn-iOS", branch: "main"),
+        .package(url: "https://github.com/sonnannaeem/ExtendedLibrary.git", branch: "main"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
@@ -26,10 +27,12 @@ let package = Package(
         .target(
             name: "TestCoreFramework",
             dependencies: [
-                .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS")
+                .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS"),
+                .product(name: "ExtendedLibrary", package: "ExtendedLibrary")
             ],
             path: "Sources/TestCoreFramework"
-        )
+        ),
+        
         
 //        .target(
 //            name: "TestSDKFrameworkWrapper",
